@@ -1,1 +1,13 @@
-<p>todo-item works!</p>
+<li>
+  <input
+    type="checkbox"
+    [checked]="done"
+    (change)="onMarkComplete()"
+  />
+
+  <span [style.text-decoration]="done ? 'line-through' : 'none'">
+    {{ text }}
+  </span>
+
+  <button (click)="onRemove()">Delete</button>
+</li>

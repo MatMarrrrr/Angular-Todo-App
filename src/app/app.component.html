@@ -1,0 +1,12 @@
+<h1>To do list</h1>
+
+<ul>
+  <app-todo-item
+    *ngFor="let task of tasks; let i = index"
+    [text]="task.text"
+    [done]="task.done"
+    [index]="i"
+    (markComplete)="markTaskComplete($event)"
+    (remove)="removeTask($event)"
+  ></app-todo-item>
+</ul>
