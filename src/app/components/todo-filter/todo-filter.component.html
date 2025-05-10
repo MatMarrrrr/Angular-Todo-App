@@ -1,0 +1,6 @@
+<label for="filter">Show:</label>
+<select id="filter" [(ngModel)]="selected" (change)="onChange()">
+  <option value="all">All</option>
+  <option value="done">Done</option>
+  <option value="undone">Undone</option>
+</select>

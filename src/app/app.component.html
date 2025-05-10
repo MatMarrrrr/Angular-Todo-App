@@ -2,9 +2,11 @@
 
 <app-todo-form (add)="addTask($event)"></app-todo-form>
 
+<app-todo-filter (filterChanged)="setFilter($event)"></app-todo-filter>
+
 <ul>
   <app-todo-item
-    *ngFor="let task of tasks; let i = index"
+    *ngFor="let task of filteredTasks; let i = index"
     [text]="task.text"
     [done]="task.done"
     [index]="i"
