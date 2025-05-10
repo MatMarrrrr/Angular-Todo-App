@@ -1,5 +1,7 @@
 <h1>To do list</h1>
 
+<app-todo-form (add)="addTask($event)"></app-todo-form>
+
 <ul>
   <app-todo-item
     *ngFor="let task of tasks; let i = index"
