@@ -16,11 +16,11 @@ export class TodoItemComponent {
   @Output() remove = new EventEmitter<number>();
   @Output() markComplete = new EventEmitter<number>();
 
-  onMarkComplete() {
+  onMarkComplete(): void {
     this.markComplete.emit(this.index);
   }
 
-  onRemove() {
+  onRemove(): void {
     this.remove.emit(this.index);
   }
 }

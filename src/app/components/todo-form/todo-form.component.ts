@@ -13,7 +13,7 @@ export class TodoFormComponent {
 
   @Output() add = new EventEmitter<string>();
 
-  onSubmit() {
+  onSubmit(): void {
     const text = this.taskText.trim();
     if (text) {
       this.add.emit(text);

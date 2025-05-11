@@ -15,7 +15,7 @@ export class TodoFilterComponent {
 
   @Output() filterChanged = new EventEmitter<FilterOption>();
 
-  onChange() {
+  onChange(): void {
     this.filterChanged.emit(this.selected);
   }
 }

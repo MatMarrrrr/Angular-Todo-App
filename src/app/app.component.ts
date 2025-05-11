@@ -22,7 +22,7 @@ export class AppComponent {
     this.tasks = this.storage.getTasks();
   }
 
-  setFilter(option: FilterOption) {
+  setFilter(option: FilterOption): void {
     this.filter = option;
   }
 
@@ -39,17 +39,17 @@ export class AppComponent {
     this.storage.saveTasks(this.tasks);
   }
 
-  addTask(text: string) {
+  addTask(text: string): void {
     this.tasks.push({ text, done: false });
     this.save();
   }
 
-  markTaskComplete(index: number) {
+  markTaskComplete(index: number): void {
     this.tasks[index].done = !this.tasks[index].done;
     this.save();
   }
 
-  removeTask(index: number) {
+  removeTask(index: number): void {
     this.tasks.splice(index, 1);
     this.save();
   }
