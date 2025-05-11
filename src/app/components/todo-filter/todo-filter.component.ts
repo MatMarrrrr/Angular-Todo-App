@@ -5,6 +5,7 @@ export type FilterOption = 'all' | 'done' | 'undone';
 
 @Component({
   selector: 'app-todo-filter',
+  standalone: true,
   imports: [FormsModule],
   templateUrl: './todo-filter.component.html',
   styleUrl: './todo-filter.component.css'

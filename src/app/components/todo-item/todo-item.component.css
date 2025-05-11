@@ -1,0 +1,40 @@
+:host {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+li {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.task-text.done{
+    text-decoration: line-through;
+}
+
+button {
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+    font-weight: 700;
+    transition: transform 0.5s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}

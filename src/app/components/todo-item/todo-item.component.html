@@ -5,7 +5,7 @@
     (change)="onMarkComplete()"
   />
 
-  <span [style.text-decoration]="done ? 'line-through' : 'none'">
+  <span [ngClass]="{ 'done': done }" class="task-text">
     {{ text }}
   </span>
 
